@@ -1,0 +1,98 @@
+{
+  "train": {
+    "split": "train",
+    "n_questions": 4755,
+    "correct_per_question": {
+      "0": 0,
+      "1": 711,
+      "2": 732,
+      "3": 1070,
+      "4": 2242
+    },
+    "mean_correct_per_question": 3.0185,
+    "questions_with_zero_correct": 0,
+    "candidate_parse_fail_rate": 0.0458,
+    "gold_parse_fail": 0,
+    "questions_with_no_parseable_candidate": 0,
+    "first_correct_position_hist": {
+      "0": 3584,
+      "1": 687,
+      "2": 300,
+      "3": 184
+    },
+    "baseline_position0_accuracy": 75.373,
+    "baseline_plurality_vote_accuracy": 85.258,
+    "plurality_tie_questions": 545,
+    "max_agreement_count_hist": {
+      "0": 0,
+      "1": 344,
+      "2": 956,
+      "3": 1213,
+      "4": 2242
+    }
+  },
+  "validation": {
+    "split": "validation",
+    "n_questions": 798,
+    "correct_per_question": {
+      "0": 0,
+      "1": 117,
+      "2": 123,
+      "3": 179,
+      "4": 379
+    },
+    "mean_correct_per_question": 3.0276,
+    "questions_with_zero_correct": 0,
+    "candidate_parse_fail_rate": 0.0492,
+    "gold_parse_fail": 0,
+    "questions_with_no_parseable_candidate": 0,
+    "first_correct_position_hist": {
+      "0": 624,
+      "1": 108,
+      "2": 42,
+      "3": 24
+    },
+    "baseline_position0_accuracy": 78.195,
+    "baseline_plurality_vote_accuracy": 86.216,
+    "plurality_tie_questions": 88,
+    "max_agreement_count_hist": {
+      "0": 0,
+      "1": 57,
+      "2": 161,
+      "3": 201,
+      "4": 379
+    }
+  },
+  "test": {
+    "split": "test",
+    "n_questions": 467,
+    "correct_per_question": {
+      "0": 0,
+      "1": 151,
+      "2": 145,
+      "3": 171,
+      "4": 0
+    },
+    "mean_correct_per_question": 2.0428,
+    "questions_with_zero_correct": 0,
+    "candidate_parse_fail_rate": 0.0589,
+    "gold_parse_fail": 0,
+    "questions_with_no_parseable_candidate": 0,
+    "first_correct_position_hist": {
+      "0": 232,
+      "1": 131,
+      "2": 72,
+      "3": 32
+    },
+    "baseline_position0_accuracy": 49.679,
+    "baseline_plurality_vote_accuracy": 69.165,
+    "plurality_tie_questions": 119,
+    "max_agreement_count_hist": {
+      "0": 0,
+      "1": 80,
+      "2": 191,
+      "3": 196,
+      "4": 0
+    }
+  }
+}

@@ -1,0 +1,33 @@
+loading splits ...
+features ready (1.2s)  train (4755, 4)  val (798, 4)
+aligned train 2114/4755   val test_like 355/798
+base scores loaded from cache
+A1 single bases: {"text": 78.028, "embed": 82.817, "pair": 85.634, "pairab": 81.127, "vote": 69.014, "voteaware": 85.352, "shape": 84.507, "ngsc": 55.775}
+oracle (val test_like): {'orig6': 94.085, 'all8': 95.775}
+  cfg content4               nb=4 C=0.1   cv= 82.54  full= 94.11  test_like= 86.76  k1=64.03  k2=95.54  k3= 99.22
+  cfg scheme11_6             nb=6 C=0.01  cv= 82.31  full= 93.98  test_like= 86.48  k1=64.03  k2=94.64  k3= 99.22
+  cfg content4+shape         nb=5 C=0.1   cv= 82.88  full= 94.61  test_like= 87.89  k1=68.42  k2=94.64  k3= 99.22
+  cfg content4+ngsc          nb=5 C=0.1   cv= 82.12  full= 94.11  test_like= 86.76  k1=64.91  k2=94.64  k3= 99.22
+  cfg content4+shape+ngsc    nb=6 C=0.3   cv= 83.06  full= 94.74  test_like= 88.17  k1=69.30  k2=93.75  k3=100.00
+  cfg scheme11_6+shape       nb=7 C=0.3   cv= 82.87  full= 94.74  test_like= 88.17  k1=68.42  k2=94.64  k3=100.00
+  cfg scheme11_6+ngsc        nb=7 C=0.01  cv= 82.26  full= 93.98  test_like= 86.48  k1=64.03  k2=94.64  k3= 99.22
+  cfg literal_8              nb=8 C=0.3   cv= 82.69  full= 94.49  test_like= 87.61  k1=68.42  k2=92.86  k3=100.00
+A5 meta family: {"point_deployed_set": {"meta_cv": 80.463, "val_full": 93.108, "val_test_like": 84.507}, "pair_deployed_set": {"meta_cv": 83.064, "val_full": 94.737, "val_test_like": 88.169}}
+CORE: {"marginal_shape_added_to_content4": 1.126, "marginal_ngsc_added_to_content4": 0.0}
+  scheme11_6 : {"C": 0.01, "meta_cv": 82.307, "val_full": 93.985, "val_test_like": 86.479}
+  deployed   : {"C": 0.3, "meta_cv": 83.064, "val_full": 94.737, "val_test_like": 88.169}
+meta-CV best=83.064; tie band=['content4+shape', 'content4+shape+ngsc', 'scheme11_6+shape']; CHOSEN=content4+shape+ngsc C=0.3
+  LOO drop text       cv= 82.92  val_test_like= 87.04  (marginal +1.13)
+  LOO drop embed      cv= 83.02  val_test_like= 87.32  (marginal +0.84)
+  LOO drop pair       cv= 82.40  val_test_like= 87.04  (marginal +1.13)
+  LOO drop pairab     cv= 82.50  val_test_like= 87.89  (marginal +0.28)
+  LOO drop shape      cv= 82.12  val_test_like= 86.76  (marginal +1.41)
+  LOO drop ngsc       cv= 82.88  val_test_like= 87.89  (marginal +0.28)
+  leakage oof      in-sample= 83.16  cv= 83.06  val_test_like= 88.17
+  leakage in_fold  in-sample= 93.99  cv= 93.95  val_test_like= 85.63
+DEPLOYED content4+shape+ngsc C=0.3  full=94.737  test_like=88.169
+per-k (test_like): {"1": {"n": 114, "correct": 79, "accuracy": 69.298}, "2": {"n": 112, "correct": 105, "accuracy": 93.75}, "3": {"n": 129, "correct": 129, "accuracy": 100.0}}
+permutation check: {'permutation': [1, 2, 0, 3], 'index_changed': 3, 'answer_changed': 0, 'score_max_abs_diff': 1.7763568394002505e-15, 'n': 798, 'choice_histogram': {'0': 218, '1': 203, '2': 188, '3': 189}}
+failures on test_like: 42  all-bases-agree: 3
+artifacts: 60125 bytes
+wrote D:\work\DASE7506-MP2-main\solutions\16_final_fusion\results\ablations.json  total 63.8s

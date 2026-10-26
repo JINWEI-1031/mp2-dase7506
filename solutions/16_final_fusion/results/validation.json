@@ -1,0 +1,23 @@
+{
+  "split": "validation",
+  "full": {
+    "n": 798,
+    "correct": 756,
+    "accuracy": 94.73684210526316
+  },
+  "prediction_seconds": 5.2417,
+  "load_and_import_seconds": 0.1796,
+  "assets_bytes": 60125,
+  "choice_histogram": {
+    "0": 218,
+    "1": 203,
+    "2": 188,
+    "3": 189
+  },
+  "test_like": {
+    "n": 355,
+    "correct": 313,
+    "accuracy": 88.16901408450704
+  },
+  "test_like_size": 355
+}
