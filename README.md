@@ -44,7 +44,9 @@ their hashes.
 ## What this submission adds
 
 * `code/submission.py` — was an empty interface in the release; it now delegates to the frozen
-  selector in `solutions/16_final_fusion/method.py`.
+  selector in `solutions/16_final_fusion/method.py`. `PACKAGE_MANIFEST.json` still records the
+  release hash; this is the one supplied file intentionally changed, because the release asks the
+  student to implement it.
 * `solutions/16_final_fusion/` — `f16_features.py` (feature extraction), `method.py` (inference),
   `train.py` (training + ablations), `artifacts/` (frozen checkpoint), `results/` (recorded
   JSON and failure cases), `REPORT.md` (development log).
