@@ -97,7 +97,7 @@ Figure 1 shows the deployed pipeline. It has four stages: feature extraction, si
 
 \par\noindent\begin{minipage}{\textwidth}
 \centering
-\includegraphics[width=15.6cm]{fig1_pipeline.png}
+\includegraphics[width=15.6cm]{figures/fig1_pipeline.png}
 \par\vspace{2pt}
 {\footnotesize\raggedright\textbf{Figure 1.} The deployed selector. Every feature is a within-question statistic, so the candidate index is never used: under a random permutation of the four candidates, 0 of 798 validation answers change. The six base scorers are each trained out-of-fold; the meta-learner sees only their held-out scores.\par}
 \vspace{2pt}
@@ -173,7 +173,7 @@ Figure 2a explains where the validation gain comes from. On questions with three
 
 \par\noindent\begin{minipage}{\textwidth}
 \centering
-\includegraphics[width=16.0cm]{fig2_evidence.png}
+\includegraphics[width=16.0cm]{figures/fig2_evidence.png}
 \par\vspace{2pt}
 {\footnotesize\raggedright\textbf{Figure 2.} (a) Accuracy on the 355-question validation hard subset, split by k, the number of correct candidates. All of the improvement over the previous stacker is on k = 1; k $\geq$ 2 is unchanged in total. (b) Official test accuracy of the sixteen schemes of rounds 1--5 that were run on test. The best score rises from 69.16\% to 83.30\% in round 3 and then stays flat; schemes 17--32 were not run on test because they did not beat the validation gate.\par}
 \vspace{2pt}
