@@ -21,6 +21,11 @@ below the 30 s gate. Eligibility remains determined by the reference machine.
 **Submitted code version:** the `submitted` tag in this repository.
 **Matching checkpoint:** `solutions/16_final_fusion/artifacts/` at that tag (9 files, 60,125 B,
 SHA-256 hashes in `artifacts/SHA256SUMS.txt`).
+**Checkpoint download (single file):**
+<https://github.com/JINWEI-1031/mp2-dase7506/releases/download/submitted/s16_artifacts.zip> —
+35,938 B zip, 60,125 B uncompressed, SHA-256
+`2f612ff7fe73b3b82040e339b64ca377e2442c28c5dad60418f23d5e461a2c13`. The same files are also
+browsable in `solutions/16_final_fusion/artifacts/`.
 
 ---
 
